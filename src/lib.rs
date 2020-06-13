@@ -1,8 +1,10 @@
 #![forbid(unsafe_code)]
 #![no_std]
 
-use rac::LineValid;
-use generic_array::{ArrayLength, GenericArray};
+use rac::{
+    LineValid,
+    generic_array::{ArrayLength, GenericArray},
+};
 
 pub trait Kem {
     type PublicKey: LineValid;
