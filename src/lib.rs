@@ -5,12 +5,8 @@ use rac::{
     LineValid,
     generic_array::{ArrayLength, GenericArray},
 };
-use digest::{Update, ExtendableOutput};
 
-pub trait Kem<D>
-where
-    D: Default + Update + ExtendableOutput,
-{
+pub trait Kem {
     type PublicKey: LineValid;
     type SecretKey: LineValid;
     type CipherText: LineValid;

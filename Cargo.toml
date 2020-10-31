@@ -1,6 +1,6 @@
 [package]
 name = "pq-kem"
-version = "0.3.0"
+version = "0.4.0"
 authors = ["Vladislav Melnik <vladislav.melnik@protonmail.com>"]
 edition = "2018"
 description = "Post quantum key encapsulation mechanism"
@@ -8,5 +8,4 @@ license = "MIT"
 repository = "https://github.com/vlad9486/pq-kem"
 
 [dependencies]
-rac = "1.1"
-digest = "0.9"
+rac = "1.3"
