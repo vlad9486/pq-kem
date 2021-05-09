@@ -25,6 +25,7 @@ pub trait Kem {
     ) -> (Self::CipherText, GenericArray<u8, Self::SharedSecretLength>);
     fn decapsulate(
         secret_key: &Self::SecretKey,
+        public_key: &Self::PublicKey,
         public_key_hash: &GenericArray<u8, Self::PublicKeyHashLength>,
         cipher_text: &Self::CipherText,
     ) -> GenericArray<u8, Self::SharedSecretLength>;
